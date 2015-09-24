@@ -33,23 +33,23 @@ get_header(); ?>
 	foreach($author_ids as $author) :
 
 	// Get user data
-		$banana = get_userdata($author->ID);
+		$members = get_userdata($author->ID);
 
 	// If user level is above 0 or login name is "admin", display profile
-		if($banana->user_level > 0 || $banana->user_login == 'admin') :
+		if($members->user_level > 0 || $members->user_login == 'admin') :
 
 		// Get link to author page
-			$user_link = get_author_posts_url($banana->ID);
+			$user_link = get_author_posts_url($members->ID);
 	?>
 
 
 <div class="author-container">
 
-	<a href="<?php echo $user_link; ?>" title="<?php echo $banana->display_name; ?>" class="small-text"><?php echo $banana->display_name; ?></a><br />
+	<a href="<?php echo $user_link; ?>" title="<?php echo $members->display_name; ?>" class="small-text"><?php echo $members->display_name; ?></a><br />
 
 		
-	<a href="<?php echo $user_link; ?>" title="<?php echo $banana->display_name; ?>">
-		<?php echo get_avatar($banana->user_email, '96', $avatar); ?>
+	<a href="<?php echo $user_link; ?>" title="<?php echo $members->display_name; ?>">
+		<?php echo get_avatar($members->user_email, '96', $avatar); ?>
 	</a>
 	
 	
@@ -58,7 +58,7 @@ get_header(); ?>
 	
  <!--
 	<p> 
-		<?php echo $banana->description; ?>
+		<?php echo $members->description; ?>
 	</p>
 -->
 
