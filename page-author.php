@@ -56,11 +56,11 @@ get_header(); ?>
 	
 	
 	
- <!--
+
 	<p> 
 		<?php echo $members->description; ?>
 	</p>
--->
+
 
 </div>
 
