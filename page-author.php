@@ -32,15 +32,16 @@ get_header(); ?>
 // Loop through each author
 	foreach($author_ids as $author) :
 
-	// Get user data
-		$members = get_userdata($author->ID);
+// Get user data
+	$members = get_userdata($author->ID);
 
-	// If user level is above 0 or login name is "admin", display profile
-		if($members->user_level > 0 || $members->user_login == 'admin') :
+// If user level is above 0 or login name is "admin", display profile
+	if($members->user_level > 0 || $members->user_login == 'admin') :
 
-		// Get link to author page
-			$user_link = get_author_posts_url($members->ID);
-	?>
+// Get link to author page
+	$user_link = get_author_posts_url($members->ID);
+	
+?>
 
 
 <div class="author-container">
@@ -53,10 +54,6 @@ get_header(); ?>
 	</a>
 	
 	
-	
-	
-	
-
 	<p> 
 		<?php echo $members->description; ?>
 	</p>
