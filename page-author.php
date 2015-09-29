@@ -52,7 +52,7 @@ get_header(); ?>
 		<?php echo get_avatar($members->user_email, '96', $avatar); ?>
 	</a>
     
-<!------ code below pulls in bio info ---------------------->
+<!-- code below pulls in bio info -->
 		
 	<p> 
 		<?php echo $members->description; ?>
