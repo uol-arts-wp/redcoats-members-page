@@ -2,7 +2,6 @@
 /*
 Template Name: Author Page
 */
-
 get_header(); ?>
 
 <p>This is the page-author.php page in redcoats</p>
