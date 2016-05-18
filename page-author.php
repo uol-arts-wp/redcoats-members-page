@@ -2,7 +2,6 @@
 /*
 Template Name: Author Page
 */
-
 get_header(); ?>
 
 <!--============== basic loop pulling in page content ==============-->

@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<p>This is the author.php page</p>
-
 <!--============== basic loop ==============-->
 
 <div>
