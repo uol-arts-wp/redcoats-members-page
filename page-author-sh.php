@@ -31,20 +31,20 @@ get_header(); ?>
 		$user_link = get_author_posts_url($members->ID);
 	?>
 
-			<div class="author-container">
-				<a href="<?php echo $user_link; ?>" title="<?php echo $members->display_name; ?>" class="small-text"><?php echo $members->display_name; ?></a><br />
-				<a href="<?php echo $user_link; ?>" title="<?php echo $members->display_name; ?>">
-					<?php echo get_avatar($members->user_email, '96', $avatar); ?>
-				</a>
-			    
-			<!-- Pull in bio info -->
-					
-				<p> 
-				<?php echo $members->description; ?>
-				</p>
-			</div><!-- close author-container -->
+				<div class="author-container">
+					<a href="<?php echo $user_link; ?>" title="<?php echo $members->display_name; ?>" class="small-text"><?php echo $members->display_name; ?></a><br />
+					<a href="<?php echo $user_link; ?>" title="<?php echo $members->display_name; ?>">
+						<?php echo get_avatar($members->user_email, '96', $avatar); ?>
+					</a>
+				    
+				<!-- Pull in bio info -->
+						
+					<p> 
+					<?php echo $members->description; ?>
+					</p>
+				</div><!-- close author-container -->
 
-			<!--<?php endif; ?>-->
+			<?php endif; ?>
 		<?php endforeach; ?>
 
 
